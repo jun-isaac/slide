@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<!-- 제이쿼리(기본 라이브러리) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style>
+		.swiper {
+			width: 1000px;
+			height: 500px;
+			outline: 2px solid #333;
+		}
+
+		.swiper-slide{
+			/* background: #ccc; */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.swiper-slide:nth-child(1){
+			background: green;
+		}		
+		.swiper-slide:nth-child(2){
+			background: yellow;
+		}		
+		.swiper-slide:nth-child(3){
+			background: blue;
+		}		
+
+	</style>
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- Slider main container -->
+	<div class="swiper">
+		<!-- Additional required wrapper / 필수. 추가 UI구성요소 -->
+		<div class="swiper-wrapper">
+			<!-- Slides 본체 (여기에 이미지 넣으면 됨) -->
+			<div class="swiper-slide">
+				<h1>Slide 1</h1>
+			</div>
+			<div class="swiper-slide">
+				<h1>Slide 2</h1>
+			</div>
+			<div class="swiper-slide">
+				<h1>Slide 3</h1>
+			</div>
+			<!-- 계속 추가 가능 -->
+		</div>
+		<!-- 하단 pager(옵션) If we need pagination -->
+		<div class="swiper-pagination"></div>
+
+		좌우 버튼 If we need navigation buttons
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+	</div>
+	<!--swiper-->
+		<!-- 스와이퍼(기타 라이브러리) -->
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<!-- 사용자 자바스크립트 -->
+		<script src="app.js"></script>
+</body>
+
+</html>
